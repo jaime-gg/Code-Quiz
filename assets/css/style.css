@@ -26,7 +26,7 @@
     color: var(--primary);
 }
 
-#timer {
+.timer {
     float: right;
     position: absolute;
     top: 0;

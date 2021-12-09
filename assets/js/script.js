@@ -16,8 +16,9 @@
 //
 
 // DOM elements
-var timerEl = document.querySelector("#timer");
+var timerEl = document.querySelector("#time");
 
+var startScreenEl = document.getElementById("start-screen");
 var startBtn = document.querySelector("#start");
 
 var questionsEl = document.querySelector("#questions");
@@ -26,6 +27,9 @@ var choicesEl = document.querySelector("#choices");
 
 var initialsEl = document.querySelector("#initials");
 var submitBtn = document.querySelector("#submit");
+
+var time = 75;
+var timerId;
 
 // quiz questions and answers
 var questions = [
@@ -85,4 +89,36 @@ var questions = [
     }
 ];
 
+function tickTok() {
+    // update time
+    time--;
+    timerEl.textContent = time;
+  
+    // check if user ran out of time
+    if (time <= 0) {
+      quizEnd();
+    }
+  }
 
+function startQuiz() {
+    startScreenEl.setAttribute("class", "hide")
+    questionsEl.removeAttribute("class");
+
+    timerId = setInterval(tickTok, 1000);
+    timerEl.textContent = time;
+
+    askQuestion();
+}
+
+function askQuestion() {
+    var currentQuestion = questions[currentQuestionIndex];
+}
+
+function quizEnd() {
+    
+}
+
+
+
+// start quiz
+startBtn.onclick = startQuiz;
