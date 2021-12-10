@@ -1,8 +1,8 @@
 # 04 Web APIs: Code Quiz
 
-As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment, which is typically a combination of multiple-choice questions and interactive challenges. For this challenge, you will build a timed code quiz that's made up of multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+For this assignment I was instructed to develop a small quiz using mainly Javascript in order to dynamically update HTML. It was through this that I was able to hide and reveal aspects of my HTML page by setting attributes found in my CSS file. By then looping through questions and collecting information on the user's answers, I was able to penalize and calculate a final score using the timer that I placed in the file. Then by using a secondary html page and the local storage, I was able to present the user with a history of their scores, as well as document which of them was their highest score. By doing this, I have met all the criteria that was placed before me, which I will include in the following User Story and Acceptance Criteria. 
 
-## User Story
+## Given: User Story
 
 ```
 AS A coding boot camp student
@@ -10,7 +10,7 @@ I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 SO THAT I can gauge my progress compared to my peers
 ```
 
-## Acceptance Criteria
+## Given: Acceptance Criteria
 
 ```
 GIVEN I am taking a code quiz
@@ -32,10 +32,11 @@ The following animation demonstrates the application functionality:
 
 ### Review
 
+Code used includes HTML, CSS, and JavaScript. 
 You are required to submit the following for review:
 
 * The URL of the functional, deployed application.
     - https://jaime-gg.github.io/code-quiz/
 * The URL of the GitHub repository.
-    - https://github.com/jaime-gg/code-quiz/blob/main/index.html 
+    - https://github.com/jaime-gg/code-quiz
 
